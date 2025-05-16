@@ -4,14 +4,14 @@ import Button from '@/components/custom/Button.vue';
 
 <template>
     <section class="relative bg-gradient-to-r from-sky-950 to-sky-800 py-10 text-white lg:py-16">
-        <div id="bg" class="container flex flex-col items-center">
-            <h1 class="text-4xl font-semibold">
+        <div id="bg" class="container flex flex-col items-center justify-center">
+            <h1 class="text-3xl font-semibold lg:text-4xl">
                 <slot name="title" />
             </h1>
             <p class="py-7 text-center text-lg lg:text-start">
                 <slot name="paragraphe" />
             </p>
-            <Button :href="route('prestation')" color="green">Prendre rendez-vous</Button>
+            <Button :href="route('prestation')" color="green" class="z-40">Prendre rendez-vous</Button>
         </div>
     </section>
 </template>

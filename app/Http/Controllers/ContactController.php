@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Contact', [
+        return Inertia::render('contact/Contact', [
             'title' => 'Contact',
         ]);
     }

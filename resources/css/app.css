@@ -78,6 +78,14 @@
     .container {
         @apply mx-auto px-4 lg:px-16;
     }
+    input[type='submit'] {
+        @apply rounded-lg bg-sky-800 py-2 font-medium text-white hover:bg-sky-700;
+    }
+    textarea,
+    input[type='text'],
+    select {
+        @apply rounded-lg border border-sky-800 py-2 pl-2;
+    }
 }
 
 @layer utilities {

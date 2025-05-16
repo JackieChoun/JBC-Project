@@ -13,5 +13,5 @@ import { Head } from '@inertiajs/vue3';
     <main>
         <slot />
     </main>
-    <Footer />
+    <Footer v-if="route().current() != 'contact'" />
 </template>
